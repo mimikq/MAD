@@ -609,9 +609,9 @@ class PogoWindows:
                 "__internal_check_pogo_mainscreen: Screenshot corrupted :(")
             return False
 
-        height, width, _ = screenshotRead.shape
-        gray = screenshotRead[int(height) - int(round(height / 5)):int(height),
-                              0: int(int(width) / 4)]
+        height, width, _ = screenshot_read.shape
+        gray = screenshot_read[int(height) - int(round(height / 5)):int(height),
+                               0: int(int(width) / 4)]
         height_, width_, _ = gray.shape
         radMin = int((width / float(6.8) - 3) / 2)
         radMax = int((width / float(6) + 3) / 2)
